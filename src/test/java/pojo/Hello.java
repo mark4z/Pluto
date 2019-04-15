@@ -1,30 +1,30 @@
 package pojo;
 
 public class Hello {
-    private String HELLO;
-    private String WORLD;
+    private String hello;
+    private String world;
 
     @Override
     public String toString() {
         return "Hello{" +
-                "HELLO='" + HELLO + '\'' +
-                ", WORLD='" + WORLD + '\'' +
+                "hello='" + hello + '\'' +
+                ", world='" + world + '\'' +
                 '}';
     }
 
-    public String getHELLO() {
-        return HELLO;
+    public String getHello() {
+        return hello;
     }
 
-    public void setHELLO(String HELLO) {
-        this.HELLO = HELLO;
+    public void setHello(String hello) {
+        this.hello = hello;
     }
 
-    public String getWORLD() {
-        return WORLD;
+    public String getWorld() {
+        return world;
     }
 
-    public void setWORLD(String WORLD) {
-        this.WORLD = WORLD;
+    public void setWorld(String world) {
+        this.world = world;
     }
 }

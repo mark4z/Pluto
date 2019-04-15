@@ -1,5 +1,6 @@
 package factory.impl;
 
+import annotation.Autowired;
 import exception.BeanCreationException;
 import factory.BeanFactory;
 import org.junit.jupiter.api.Test;
@@ -7,11 +8,20 @@ import pojo.Hello;
 import factory.BeanDefinition;
 import support.DefaultBeanFactory;
 
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class DefaultBeanFactoryTest {
     private BeanFactory beanFactory;
+    @Autowired
+    private Hello pojo;
 
+    @Test
+    void autowired() throws IllegalAccessException {
+
+    }
 
     @Test
     void getBean() {
@@ -21,12 +31,13 @@ class DefaultBeanFactoryTest {
         Hello hello = (Hello) beanFactory.getBean("pojo");
         assertNotNull(hello);
     }
+
     @Test
     void getInvalidBean() {
         this.beanFactory = new DefaultBeanFactory("beans.xml");
-        try{
+        try {
             Hello hello = (Hello) beanFactory.getBean("???");
-        }catch (BeanCreationException e){
+        } catch (BeanCreationException e) {
             System.out.println(e.getMessage());
         }
     }
