@@ -1,76 +1,46 @@
 package factory.impl;
 
-import annotation.Autowired;
-import exception.BeanCreationException;
-import factory.BeanFactory;
+import core.io.ClassPathResource;
+import factory.BeanDefinition;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import pojo.Hello;
-import factory.BeanDefinition;
 import support.DefaultBeanFactory;
-
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
+import support.XmlBeanDefinitionReader;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class DefaultBeanFactoryTest {
-    private BeanFactory beanFactory;
-    @Autowired
-    private Hello pojo;
+    private DefaultBeanFactory factory;
+    private XmlBeanDefinitionReader reader;
 
-    @Test
-    void autowired() throws IllegalAccessException {
-
+    @BeforeEach
+    void setUp() {
+        factory = new DefaultBeanFactory();
+        reader = new XmlBeanDefinitionReader(factory);
     }
 
+
     @Test
-    void getBean() {
-        this.beanFactory = new DefaultBeanFactory("beans.xml");
-        BeanDefinition beanDefinition = beanFactory.getBeanDefinition("pojo");
-        assertEquals("pojo.Hello", beanDefinition.getBeanClassName());
-        Hello hello = (Hello) beanFactory.getBean("pojo");
+    void getSBean() {
+        reader.loadBeanDefinitions(new ClassPathResource("beans.xml"));
+        BeanDefinition bd = factory.getBeanDefinition("pojo");
+        assertTrue(bd.isSingleton());
+        assertFalse(bd.isProtoType());
+        assertEquals(BeanDefinition.SCOPE_DEFAULT, bd.getScope());
+        assertEquals("pojo.Hello", bd.getBeanClassName());
+        Hello hello = (Hello) factory.getBean("pojo");
+        Hello hello1 = (Hello) factory.getBean("pojo");
         assertNotNull(hello);
+        assertEquals(hello, hello1);
     }
-
     @Test
-    void getInvalidBean() {
-        this.beanFactory = new DefaultBeanFactory("beans.xml");
-        try {
-            Hello hello = (Hello) beanFactory.getBean("???");
-        } catch (BeanCreationException e) {
-            System.out.println(e.getMessage());
-        }
-    }
-
-    @Test
-    void getBean1() {
-    }
-
-    @Test
-    void getBean2() {
-    }
-
-    @Test
-    void getBean3() {
-    }
-
-    @Test
-    void getBean4() {
-    }
-
-    @Test
-    void containsBean() {
-    }
-
-    @Test
-    void isSingleton() {
-    }
-
-    @Test
-    void isPrototype() {
-    }
-
-    @Test
-    void getType() {
+    void getPBean() {
+        reader.loadBeanDefinitions(new ClassPathResource("beans.xml"));
+        BeanDefinition bd = factory.getBeanDefinition("pojo1");
+        assertEquals("pojo.Hello", bd.getBeanClassName());
+        Hello hello = (Hello) factory.getBean("pojo1");
+        Hello hello1 = (Hello) factory.getBean("pojo1");
+        assertNotEquals(hello, hello1);
     }
 }

@@ -6,6 +6,8 @@
 
     <bean id="pojo" class="pojo.Hello">
     </bean>
+    <bean id="pojo1" class="pojo.Hello" scope="prototype">
+    </bean>
 
 
 </beans>
