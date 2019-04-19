@@ -4,9 +4,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="pojo" class="pojo.Hello">
+    <bean id="testDao" class="src.TestDao">
+        <property name="str" value="hello"/>
+        <property name="mybatis" value="true"/>
     </bean>
-    <bean id="pojo1" class="pojo.Hello" scope="prototype">
+    <bean id="testService" class="src.TestService">
+        <property name="testDao" ref="testDao"/>
+        <property name="version" value="2"/>
     </bean>
 
 

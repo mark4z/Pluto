@@ -1,7 +1,6 @@
 package context;
 
-import config.ConfigurableBeanFactory;
-import factory.BeanFactory;
+import beans.factory.config.ConfigurableBeanFactory;
 
 /**
  * @Author: Marcus
