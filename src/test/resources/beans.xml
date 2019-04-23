@@ -12,6 +12,10 @@
         <property name="testDao" ref="testDao"/>
         <property name="version" value="2"/>
     </bean>
+    <bean id="testServiceC" class="src.TestService">
+        <constructor-arg ref="testDao"/>
+        <constructor-arg value="2"/>
+    </bean>
 
 
 </beans>

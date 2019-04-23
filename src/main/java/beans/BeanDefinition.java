@@ -9,6 +9,8 @@ public interface BeanDefinition {
 
     String getScope();
 
+    String getId();
+
     void setScope(String scope);
 
     boolean isSingleton();
@@ -18,4 +20,14 @@ public interface BeanDefinition {
     String getBeanClassName();
 
     List<PropertyValue> getPropertyValues();
+
+    ConstructorArgument getConstructorArgument();
+
+    boolean hasContructorArgumentValues();
+
+    Class<?> getBeanClass();
+
+    boolean hasBeanClass();
+
+    Class<?> resolveBeanClass(ClassLoader beanClassLoader) throws ClassNotFoundException;
 }

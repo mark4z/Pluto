@@ -2,9 +2,9 @@ package beans.factory.impl;
 
 import context.ApplicationContext;
 import org.junit.jupiter.api.Test;
-import src.TestService;
 import beans.factory.support.ClassPathXmlApplicationContext;
 import beans.factory.support.FileSystemXmlApplicationContext;
+import src.TestService;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -30,5 +30,18 @@ class ApplicationContextTest {
         TestService testService = (TestService) ctx.getBean("testService");
         assertNotNull(testService.getTestDao());
         assertEquals(2,testService.getVersion());
+    }
+    @Test
+    void constructor(){
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("beans.xml");
+        TestService testService = (TestService) ctx.getBean("testServiceC");
+        assertNotNull(testService.getTestDao());
+        assertEquals(2,testService.getVersion());
+    }
+    @Test
+    void autoWired(){
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("beansAuto.xml");
+        test.TestService testService = (test.TestService) ctx.getBean("testService");
+        assertNotNull(testService.getTestDao());
     }
 }

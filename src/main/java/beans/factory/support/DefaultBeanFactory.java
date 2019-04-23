@@ -1,7 +1,10 @@
 package beans.factory.support;
 
 import beans.PropertyValue;
+import beans.factory.config.BeanPostProcessor;
 import beans.factory.config.ConfigurableBeanFactory;
+import beans.factory.config.DependencyDescriptor;
+import beans.factory.config.InstantiationAwareBeanPostProcessor;
 import beans.factory.exception.BeanCreationException;
 import beans.BeanDefinition;
 import org.springframework.util.ClassUtils;
@@ -10,6 +13,7 @@ import org.springframework.util.StringUtils;
 import java.beans.BeanInfo;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -17,6 +21,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class DefaultBeanFactory extends DefaultSingletonBeanRegistry implements ConfigurableBeanFactory, BeanDefinitionRegistry {
     private final Map<String, BeanDefinition> beanDefinitionMap = new ConcurrentHashMap<String, BeanDefinition>();
     private ClassLoader beanClassLoader;
+    List<BeanPostProcessor> beanPostProcessors=new ArrayList<BeanPostProcessor>();
 
     public Object getBean(String var1) {
         BeanDefinition beanDefinition = this.getBeanDefinition(var1);
@@ -40,18 +45,29 @@ public class DefaultBeanFactory extends DefaultSingletonBeanRegistry implements 
         return bean;
     }
 
+
     private Object instantiateBean(BeanDefinition beanDefinition) {
-        ClassLoader cl = this.getBeanClassLoader();
-        try {
-            String beanClassName = beanDefinition.getBeanClassName();
-            Class<?> clz = cl.loadClass(beanClassName);
-            return clz.newInstance();
-        } catch (Exception e) {
-            throw new BeanCreationException("Bean Definition does not exist!");
+        if (beanDefinition.hasContructorArgumentValues()) {
+            ConstructorResolver resolver = new ConstructorResolver(this);
+            return resolver.autowireConstructor(beanDefinition);
+        } else {
+            ClassLoader cl = this.getBeanClassLoader();
+            try {
+                String beanClassName = beanDefinition.getBeanClassName();
+                Class<?> clz = cl.loadClass(beanClassName);
+                return clz.newInstance();
+            } catch (Exception e) {
+                throw new BeanCreationException("Bean Definition does not exist!");
+            }
         }
     }
 
     private void populateBean(Object bean, BeanDefinition beanDefinition) {
+
+        for(BeanPostProcessor processor:this.getBeanPostProcessors()){
+            ((InstantiationAwareBeanPostProcessor)processor).postProcessPropertyValues(bean, beanDefinition.getId());
+        }
+
         List<PropertyValue> propertyValues = beanDefinition.getPropertyValues();
         if (propertyValues == null || propertyValues.isEmpty()) {
             return;
@@ -93,5 +109,37 @@ public class DefaultBeanFactory extends DefaultSingletonBeanRegistry implements 
 
     public ClassLoader getBeanClassLoader() {
         return (this.beanClassLoader != null ? this.beanClassLoader : ClassUtils.getDefaultClassLoader());
+    }
+
+    public void addBeanPostProcessor(BeanPostProcessor postProcessor) {
+        this.beanPostProcessors.add(postProcessor);
+    }
+
+    public List<BeanPostProcessor> getBeanPostProcessors() {
+        return this.beanPostProcessors;
+    }
+
+    public Object resolveDependency(DependencyDescriptor descriptor) {
+        Class<?> typeToMatch = descriptor.getDependencyType();
+        for (BeanDefinition bd : this.beanDefinitionMap.values()) {
+            resolveBeanClass(bd);
+            Class<?> beanClass = bd.getBeanClass();
+            if (typeToMatch.isAssignableFrom(beanClass)) {
+                return this.getBean(bd.getId());
+            }
+        }
+        return null;
+    }
+
+    private void resolveBeanClass(BeanDefinition bd) {
+        if (bd.hasBeanClass()) {
+            return;
+        } else {
+            try {
+                bd.resolveBeanClass(this.getBeanClassLoader());
+            } catch (Exception e) {
+                throw new RuntimeException("can't load class " + bd.getBeanClassName());
+            }
+        }
     }
 }

@@ -1,5 +1,6 @@
 package beans.factory.support;
 
+import beans.factory.annotation.AutowiredAnnotationProcessor;
 import context.ApplicationContext;
 import core.io.Resource;
 import org.springframework.util.ClassUtils;
@@ -19,6 +20,13 @@ public abstract class AbstractApplicationContext implements ApplicationContext {
         Resource resource = this.getResourceByPath(config);
         reader.loadBeanDefinitions(resource);
         factory.setBeanClassLoader(this.getBeanClassLoader());
+        registerBeanPostProcessors(factory);
+    }
+
+    protected void registerBeanPostProcessors(DefaultBeanFactory factory) {
+        AutowiredAnnotationProcessor postProcessor = new AutowiredAnnotationProcessor();
+        postProcessor.setBeanFactory(factory);
+        factory.addBeanPostProcessor(postProcessor);
     }
 
     public Object getBean(String var1) {

@@ -2,59 +2,69 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf1bc23e-46bb-4b90-b8d8-3b8e6876cddd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/beans/PropertyValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/beans/TypeConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/beans/factory/config/RuntimeBeanReference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/beans/factory/config/TypedStringValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/beans/factory/exception/TypeMismatchException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/beans/factory/propertyeditors/CustomBooleanEditor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/beans/factory/propertyeditors/CustomNumberEditor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/beans/factory/support/BeanDefinitionValueResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/beans/factory/support/SimpleTypeConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/beans/factory/support/XmlBeanDefinitionReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/beans/factory/impl/BDValueResolverTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/beans/factory/impl/BeanDefTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/beans/factory/impl/BooleanEditor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/beans/factory/impl/DefaultBeanFactoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/beans/factory/impl/NumberEditorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/beans/factory/impl/TypeConverterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/src/TestDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/src/TestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d6b64d9a884eacb93478342632cf8a9b38bee39b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d6b64d9a884eacb93478342632cf8a9b38bee39b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/db7a76d1ea4db15265fb4e592ba6c3171a688b11" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/db7a76d1ea4db15265fb4e592ba6c3171a688b11" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/InjectionMetadata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beans/ConstructorArgument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beans/factory/annotation/AnnotatedBeanDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beans/factory/annotation/AutowiredAnnotationProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beans/factory/annotation/AutowiredFieldElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beans/factory/annotation/InjectionElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beans/factory/annotation/InjectionMetadata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beans/factory/config/AutowireCapableBeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beans/factory/config/BeanPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beans/factory/config/DependencyDescriptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beans/factory/config/InstantiationAwareBeanPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beans/factory/support/BeanNameGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beans/factory/support/ConstructorResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/context/annotation/AnnotationBeanNameGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/context/annotation/ClassPathBeanDefinitionScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/context/annotation/ScannedGenericBeanDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/annotation/AnnotationAttributes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/annotation/Autowired.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/annotation/Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/io/support/PackageResourceLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/type/AnnotationMetadata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/type/ClassMetadata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/type/classreading/AnnotationAttributesReadingVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/type/classreading/AnnotationMetadataReadingVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/type/classreading/ClassMetadataReadingVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/type/classreading/MetadataReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/type/classreading/SimpleMetadataReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/TestDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/TestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/beans/factory/impl/AutowiredAnnotationProcessorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/beans/factory/impl/ClassPathBeanDefinitionScannerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/beans/factory/impl/ClassReaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/beans/factory/impl/ConstructorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/beans/factory/impl/DependencyDescriptorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/beans/factory/impl/InjectionMetadataTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/beans/factory/impl/MetaDataReaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/beans/factory/impl/PackageLoaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/beans/factory/impl/XmlBeanDefinitionReaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/beansAuto.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/2/a2f6c71097097afd628b4457b0e9437ab712eaa9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d6b64d9a884eacb93478342632cf8a9b38bee39b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/db7a76d1ea4db15265fb4e592ba6c3171a688b11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f915e84f8d77158f22bf3180a7fc80a1c9f9ad1f" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/ConfigurableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/factory/config/ConfigurableBeanFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/SingletonBeanRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/factory/config/SingletonBeanRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/Autowired.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/BeanDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/BeanDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/factory/config/ConfigurableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/factory/config/ConfigurableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/factory/support/AbstractApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/factory/support/AbstractApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/factory/support/BeanDefinitionValueResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/factory/support/BeanDefinitionValueResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/factory/support/DefaultBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/factory/support/DefaultBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/factory/support/GenericBeanDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/factory/support/GenericBeanDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/beans/factory/support/XmlBeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/factory/support/XmlBeanDefinitionReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/context/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/context/ApplicationContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exception/BeanCreationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/factory/exception/BeanCreationException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exception/BeansDefinitionStoreException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/factory/exception/BeansDefinitionStoreException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exception/BeansException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/factory/exception/BeansException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/BeanDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/BeanDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/BeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/factory/BeanFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/support/AbstractApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/factory/support/AbstractApplicationContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/support/BeanDefinitionRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/factory/support/BeanDefinitionRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/support/ClassPathXmlApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/factory/support/ClassPathXmlApplicationContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/support/DefaultBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/factory/support/DefaultBeanFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/support/DefaultSingletonBeanRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/factory/support/DefaultSingletonBeanRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/support/FileSystemXmlApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/factory/support/FileSystemXmlApplicationContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/support/GenericBeanDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/beans/factory/support/GenericBeanDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/support/XmlBeanDefinitionReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/factory/impl/ApplicationContextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/beans/factory/impl/ApplicationContextTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/factory/impl/DefaultBeanFactoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/factory/impl/ResourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/beans/factory/impl/ResourceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/Hello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/io/ClassPathResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/io/ClassPathResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/io/FileSystemResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/io/FileSystemResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/beans/factory/impl/ApplicationContextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/beans/factory/impl/ApplicationContextTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/beans/factory/impl/BeanDefTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/beans/factory/impl/BeanDefTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/src/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/src/TestService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exception/BeanCreationException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exception/BeansException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/factory/BeanDefinition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/factory/BeanFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/support/DefaultBeanFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/support/GenericBeanDefinition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/annotation/Autowired.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/factory/impl/DefaultBeanFactoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/Hello.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -69,30 +79,22 @@
       <FILTER>factory.impl.*</FILTER>
     </SUITE>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/beans/factory/impl/ApplicationContextTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="29" column="56" lean-forward="true" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/BeanFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -112,6 +114,7 @@
       <find>getB</find>
       <find>getAss</find>
       <find>intval</find>
+      <find>popl</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -123,56 +126,56 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/factory/impl/FindFileWM.java" />
-        <option value="$PROJECT_DIR$/src/main/java/exception/XmlReadException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/factory/BeanDefinitionRegistry.java" />
-        <option value="$PROJECT_DIR$/src/main/java/support/BeanDefinitionRegistry.java" />
-        <option value="$PROJECT_DIR$/src/test/java/factory/impl/ContextapplicationTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/factory/ApplicationContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/factory/ApplicationContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/context/ClassPathXmlApplicationContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/core/io/ClassPathResource.java" />
-        <option value="$PROJECT_DIR$/src/test/java/All.java" />
-        <option value="$PROJECT_DIR$/src/test/java/factory/impl/ResouceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/core/io/Resouce.java" />
-        <option value="$PROJECT_DIR$/src/main/java/core/io/Resource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/factory/BeanFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/config/ConfigurableBeanFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/context/ApplicationContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/support/AbstractApplicationContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/support/ClassPathXmlApplicationContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test/TestService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/beans/factory/impl/PackageLoaderTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/io/FileSystemResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/support/FileSystemXmlApplicationContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/config/SingletonBeanRegistry.java" />
-        <option value="$PROJECT_DIR$/src/main/java/support/DefaultSingletonBeanRegistry.java" />
-        <option value="$PROJECT_DIR$/src/test/java/factory/impl/DefaultBeanFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/factory/BeanDefinition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/beans/PropertyValue.java" />
-        <option value="$PROJECT_DIR$/src/main/java/beans/BeanDefinition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/config/TypedStringValue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/io/support/PackageResourceLoader.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/support/GenericBeanDefinition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/support/XmlBeanDefinitionReader.java" />
-        <option value="$PROJECT_DIR$/src/test/java/factory/impl/BeanDefTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/config/RuntimeBeanReference.java" />
-        <option value="$PROJECT_DIR$/src/test/java/factory/impl/BDValueResolverTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/support/BeanDefinitionValueResolver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/support/DefaultBeanFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/src/TestService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/factory/impl/ApplicationContextTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/support/TypeConverter.java" />
-        <option value="$PROJECT_DIR$/src/test/java/factory/impl/NumberEditorTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/beans/factory/propertyeditors/CustomNumberEditor.java" />
-        <option value="$PROJECT_DIR$/src/test/java/beans/factory/impl/NumberEditorTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/beans/factory/impl/BooleanEditorTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/beans/factory/impl/BooleanEditor.java" />
-        <option value="$PROJECT_DIR$/src/test/java/src/TestDao.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/beans.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/beans/factory/propertyeditors/CustomBooleanEditor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/beans/TypeConverter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/beans/factory/exception/TypeMismatchException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/beans/factory/support/SimpleTypeConverter.java" />
-        <option value="$PROJECT_DIR$/src/test/java/beans/factory/impl/TypeConverterTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/io/ClassPathResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/annotation/AnnotationAttributes.java" />
+        <option value="$PROJECT_DIR$/src/test/java/beans/factory/impl/ClassReaderTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/type/classreading/AnnotationAttributesReadingVisitor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/type/ClassMetaData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/type/AnnotationMetadata.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/type/classreading/MetadataReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/type/classreading/AnnotationMetadataReadingVisitor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/type/classreading/ClassMetadataReadingVisitor.java" />
+        <option value="$PROJECT_DIR$/src/test/java/beans/factory/impl/MetaDataReaderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/beans/factory/impl/ClassPathBeanDefinationTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/beans/factory/impl/ClassPathBeanDefinationScannerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/context/ClassPathBeanDefinationScanner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/type/classreading/SimpleMetadataReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/context/annotation/ClassPathBeanDefinationScanner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beans/factory/annotation/AnnotatedBeanDefinition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/context/annotation/ScannedGenericBeanDefinition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test/TestDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beans/factory/support/BeanNameGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/context/annotation/AnnotationBeanNameGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/context/annotation/ClassPathBeanDefinitionScanner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/beans/factory/impl/ClassPathBeanDefinitionScannerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/beans/factory/impl/XmlBeanDefinitionReaderTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beans/factory/support/XmlBeanDefinitionReader.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/beansAuto.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/beans/factory/impl/ApplicationContextTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beans/factory/config/DependencyDescriptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beans/factory/AutowireCapableBeanFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beans/factory/config/AutowireCapableBeanFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beans/BeanDefinition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beans/factory/support/GenericBeanDefinition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/context/ApplicationContext.java" />
+        <option value="$PROJECT_DIR$/src/test/java/beans/factory/impl/DependencyDescriptorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/InjectionMetadata.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beans/factory/annotation/InjectionElement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beans/factory/annotation/AutowiredFieldElement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beans/factory/annotation/InjectionMetadata.java" />
+        <option value="$PROJECT_DIR$/src/test/java/beans/factory/impl/InjectionMetadataTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/beans/factory/impl/InjectionMetadata.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beans/factory/config/InstantiationAwareBeanPostProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beans/factory/config/BeanPostProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beans/factory/annotation/AutowiredAnnotationProcessor.java" />
+        <option value="$PROJECT_DIR$/src/test/java/beans/factory/impl/AutowiredAnnotationProcessorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beans/factory/config/ConfigurableBeanFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/beans/factory/support/AbstractApplicationContext.java" />
         <option value="$PROJECT_DIR$/src/main/java/beans/factory/support/DefaultBeanFactory.java" />
       </list>
     </option>
@@ -184,9 +187,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="55" />
-    <option name="width" value="666" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="124" />
+    <option name="width" value="1168" />
     <option name="height" value="775" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -197,6 +200,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,7 +232,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="context" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Pluto" type="b2602c69:ProjectViewProjectNode" />
@@ -236,18 +240,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="beans" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pluto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pluto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="beans" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Pluto" type="b2602c69:ProjectViewProjectNode" />
@@ -270,22 +263,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Pluto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555659876150" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556012500401" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/factory" />
@@ -299,6 +287,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="beans.factory.config" />
+      <recent name="context.annotation" />
+      <recent name="beans.factory.support" />
+      <recent name="beans.factory.annotation" />
+      <recent name="context" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="factory.impl" />
       <recent name="factory" />
@@ -307,24 +302,23 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="core" />
       <recent name="beans" />
       <recent name="beans.factory" />
       <recent name="factory" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\c\Desktop\Pluto\src\test\resources" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mengchao.lv\Desktop\doc\Pluto\src\test\resources" />
       <recent name="C:\Users\c\Desktop\Pluto\src\test" />
       <recent name="C:\Users\c\Desktop\Pluto\src\main\resources" />
       <recent name="C:\Users\c\Desktop\Pluto\src\test\java\factory" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="beans.factory.support" />
-      <recent name="beans.factory.propertyeditors" />
-      <recent name="support" />
-      <recent name="beans" />
-      <recent name="core.io" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="annotation" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\c\Desktop\Pluto\src\test\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -339,16 +333,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in Pluto">
-    <configuration name="All in Pluto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Pluto" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApplicationContextTest.setter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.beans.factory.impl in Pluto">
+    <configuration name="ApplicationContextTest.autoWired" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Pluto" />
       <extension name="coverage">
         <pattern>
@@ -358,13 +344,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="beans.factory.impl" />
       <option name="MAIN_CLASS_NAME" value="beans.factory.impl.ApplicationContextTest" />
-      <option name="METHOD_NAME" value="setter" />
+      <option name="METHOD_NAME" value="autoWired" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BooleanEditor.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AutowiredAnnotationProcessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Pluto" />
       <extension name="coverage">
         <pattern>
@@ -373,29 +359,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="beans.factory.impl" />
-      <option name="MAIN_CLASS_NAME" value="beans.factory.impl.BooleanEditor" />
-      <option name="METHOD_NAME" value="main" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TypeConverterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Pluto" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="beans.factory.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="beans.factory.impl" />
-      <option name="MAIN_CLASS_NAME" value="beans.factory.impl.TypeConverterTest" />
+      <option name="MAIN_CLASS_NAME" value="beans.factory.impl.AutowiredAnnotationProcessorTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TypeConverterTest.toInt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AutowiredAnnotationProcessorTest.testGetInjectionMetadata" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Pluto" />
       <extension name="coverage">
         <pattern>
@@ -404,20 +374,50 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="beans.factory.impl" />
-      <option name="MAIN_CLASS_NAME" value="beans.factory.impl.TypeConverterTest" />
-      <option name="METHOD_NAME" value="toInt" />
+      <option name="MAIN_CLASS_NAME" value="beans.factory.impl.AutowiredAnnotationProcessorTest" />
+      <option name="METHOD_NAME" value="testGetInjectionMetadata" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InjectionMetadataTest.testInjection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pluto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="beans.factory.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="beans.factory.impl" />
+      <option name="MAIN_CLASS_NAME" value="beans.factory.impl.InjectionMetadataTest" />
+      <option name="METHOD_NAME" value="testInjection" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="beans.factory.impl in Pluto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pluto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="beans.factory.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="beans.factory.impl" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in Pluto" />
-        <item itemvalue="JUnit.ApplicationContextTest.setter" />
-        <item itemvalue="JUnit.TypeConverterTest" />
-        <item itemvalue="JUnit.TypeConverterTest.toInt" />
-        <item itemvalue="JUnit.BooleanEditor.main" />
+        <item itemvalue="JUnit.beans.factory.impl in Pluto" />
+        <item itemvalue="JUnit.ApplicationContextTest.autoWired" />
+        <item itemvalue="JUnit.AutowiredAnnotationProcessorTest.testGetInjectionMetadata" />
+        <item itemvalue="JUnit.AutowiredAnnotationProcessorTest" />
+        <item itemvalue="JUnit.InjectionMetadataTest.testInjection" />
       </list>
     </recent_temporary>
   </component>
@@ -442,43 +442,48 @@
       <workItem from="1555566665030" duration="659000" />
       <workItem from="1555567433060" duration="11947000" />
       <workItem from="1555637607748" duration="17463000" />
+      <workItem from="1555665981749" duration="920000" />
+      <workItem from="1555667181576" duration="812000" />
+      <workItem from="1555897746908" duration="1009000" />
+      <workItem from="1555898809504" duration="14537000" />
+      <workItem from="1555983818224" duration="22507000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ApplicationContextTest_setter - 2019.04.19 at 11h 41m 55s.xml">
-      <configuration name="ApplicationContextTest.setter" configurationId="JUnit" />
+    <history-entry file="InjectionMetadataTest - 2019.04.23 at 17h 00m 25s.xml">
+      <configuration name="InjectionMetadataTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationContextTest - 2019.04.19 at 11h 43m 17s.xml">
-      <configuration name="ApplicationContextTest" configurationId="JUnit" />
+    <history-entry file="InjectionMetadataTest_testInjection - 2019.04.23 at 17h 02m 46s.xml">
+      <configuration name="InjectionMetadataTest.testInjection" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Pluto - 2019.04.19 at 11h 46m 03s.xml">
-      <configuration name="All in Pluto" configurationId="JUnit" />
+    <history-entry file="InjectionMetadataTest_testInjection - 2019.04.23 at 17h 06m 59s.xml">
+      <configuration name="InjectionMetadataTest.testInjection" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationContextTest_setter - 2019.04.19 at 11h 48m 27s.xml">
-      <configuration name="ApplicationContextTest.setter" configurationId="JUnit" />
+    <history-entry file="AutowiredAnnotationProcessorTest_testGetInjectionMetadata - 2019.04.23 at 17h 15m 26s.xml">
+      <configuration name="AutowiredAnnotationProcessorTest.testGetInjectionMetadata" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationContextTest_setter - 2019.04.19 at 11h 49m 04s.xml">
-      <configuration name="ApplicationContextTest.setter" configurationId="JUnit" />
+    <history-entry file="AutowiredAnnotationProcessorTest_testGetInjectionMetadata - 2019.04.23 at 17h 15m 39s.xml">
+      <configuration name="AutowiredAnnotationProcessorTest.testGetInjectionMetadata" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NumberEditorTest_main - 2019.04.19 at 14h 49m 48s.xml">
-      <configuration name="NumberEditorTest.main" configurationId="JUnit" />
+    <history-entry file="AutowiredAnnotationProcessorTest_testGetInjectionMetadata - 2019.04.23 at 17h 15m 57s.xml">
+      <configuration name="AutowiredAnnotationProcessorTest.testGetInjectionMetadata" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BooleanEditor_main - 2019.04.19 at 15h 09m 55s.xml">
-      <configuration name="BooleanEditor.main" configurationId="JUnit" />
+    <history-entry file="ApplicationContextTest_autoWired - 2019.04.23 at 17h 25m 46s.xml">
+      <configuration name="ApplicationContextTest.autoWired" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TypeConverterTest - 2019.04.19 at 15h 37m 40s.xml">
-      <configuration name="TypeConverterTest" configurationId="JUnit" />
+    <history-entry file="ApplicationContextTest_autoWired - 2019.04.23 at 17h 38m 36s.xml">
+      <configuration name="ApplicationContextTest.autoWired" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TypeConverterTest - 2019.04.19 at 15h 38m 41s.xml">
-      <configuration name="TypeConverterTest" configurationId="JUnit" />
+    <history-entry file="ApplicationContextTest_autoWired - 2019.04.23 at 17h 39m 58s.xml">
+      <configuration name="ApplicationContextTest.autoWired" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicationContextTest_setter - 2019.04.19 at 15h 39m 42s.xml">
-      <configuration name="ApplicationContextTest.setter" configurationId="JUnit" />
+    <history-entry file="ApplicationContextTest_autoWired - 2019.04.23 at 17h 40m 06s.xml">
+      <configuration name="ApplicationContextTest.autoWired" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58352000" />
+    <option name="totallyTimeSpent" value="98137000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -491,9 +496,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4969231" weight="0.30634922" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4969231" visible="true" weight="0.2436508" />
       <window_info id="Structure" order="1" sideWeight="0.5030769" side_tool="true" weight="0.21825397" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -502,18 +506,18 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3276923" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3353846" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4846154" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21538462" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.34615386" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.26" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32923076" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Spring" order="12" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.3276923" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3923077" />
       <window_info anchor="bottom" id="SonarLint" order="14" weight="0.3276923" />
       <window_info anchor="bottom" id="Hybris Console" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -524,44 +528,9 @@
       <window_info anchor="right" id="Maven" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32936507" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32936507" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4969231" visible="true" weight="0.2563492" />
-      <window_info id="Structure" order="1" sideWeight="0.5030769" side_tool="true" weight="0.21825397" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32615384" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.33846155" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Spring" order="12" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.3276923" />
-      <window_info anchor="bottom" id="SonarLint" order="14" weight="0.32923076" />
-      <window_info anchor="bottom" id="Hybris Console" order="15" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32936507" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -576,322 +545,274 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>beanFactory.getBean(field.getName())</expression-string>
+        <expression-string>this.classLoader.getResourceAsStream(&quot;C:\\Users\\mengchao.lv\\Desktop\\doc\\Pluto\\src\\main\\java\\test\\TestService.class&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this.classLoader.getResourceAsStream(&quot;C:\\Users\\mengchao.lv\\Desktop\\doc\\Pluto\\src\\main\\java\\test\\TestService.java&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this.classLoader.getResourceAsStream(this.path)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>parameterTypes[0]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>parameterTypes[1].getClass();</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>parameterTypes[0].getClass();</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>parameterTypes[0].getClass()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>parameterTypes[i].getClass()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>element.elementIterator(CONSTRUCTOR_ARG_ELEMENT)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Map.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/rt.jar!/jdk/internal/org/objectweb/asm/ClassReader.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="623" column="28" selection-start-line="623" selection-start-column="28" selection-end-line="623" selection-end-column="28" />
+        <state relative-caret-position="126">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/annotation/Autowired.class">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-core/4.3.8.RELEASE/spring-core-4.3.8.RELEASE.jar!/org/springframework/core/type/classreading/AnnotationMetadataReadingVisitor.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="126">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/annotation/AnnotationAttributes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
           <folding>
-            <element signature="e#0#386#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#174#201#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#844#845#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
+            <element signature="e#961#962#0" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+            <element signature="e#1075#1076#0" expanded="true" />
+            <element signature="e#1133#1134#0" expanded="true" />
+            <element signature="e#1140#1170#0" expanded="true" />
+            <element signature="e#1235#1236#0" expanded="true" />
+            <element signature="e#1297#1298#0" expanded="true" />
+            <element signature="e#1304#1334#0" expanded="true" />
+            <element signature="e#1398#1399#0" expanded="true" />
+            <element signature="e#1457#1458#0" expanded="true" />
+            <element signature="e#1464#1494#0" expanded="true" />
+            <element signature="e#1560#1561#0" expanded="true" />
+            <element signature="e#1616#1617#0" expanded="true" />
+            <element signature="e#1677#1678#0" expanded="true" />
+            <element signature="e#1735#1736#0" expanded="true" />
+            <element signature="e#1743#1773#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/config/ConfigurableBeanFactory.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/type/classreading/AnnotationAttributesReadingVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="457">
+          <caret line="32" column="60" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
           <folding>
-            <element signature="e#0#303#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/context/ApplicationContext.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/annotation/Component.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#236#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="252">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/core/io/ClassPathResource.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/type/ClassMetadata.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <folding>
-            <element signature="e#0#1045#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="168">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Class.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/type/classreading/MetadataReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-420">
-          <caret line="121" column="48" lean-forward="true" selection-start-line="121" selection-start-column="48" selection-end-line="121" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/config/SingletonBeanRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/beans/factory/impl/DefaultBeanFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" selection-start-line="12" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="399">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/config/TypedStringValue.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/beans/factory/impl/ClassReaderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        <state relative-caret-position="184">
+          <caret line="38" column="82" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="82" />
           <folding>
-            <element signature="e#187#188#0" expanded="true" />
-            <element signature="e#221#222#0" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/beans/factory/impl/MetaDataReaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/type/classreading/AnnotationMetadataReadingVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1419#1420#0" expanded="true" />
+            <element signature="e#1447#1448#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/type/classreading/ClassMetadataReadingVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1101">
+          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#1425#1426#0" expanded="true" />
+            <element signature="e#1457#1458#0" expanded="true" />
+            <element signature="e#1493#1494#0" expanded="true" />
+            <element signature="e#1527#1528#0" expanded="true" />
+            <element signature="e#1562#1563#0" expanded="true" />
+            <element signature="e#1595#1596#0" expanded="true" />
+            <element signature="e#1627#1628#0" expanded="true" />
+            <element signature="e#1657#1658#0" expanded="true" />
+            <element signature="e#1752#1753#0" expanded="true" />
+            <element signature="e#1780#1781#0" expanded="true" />
+            <element signature="e#1698#1699#0" expanded="true" />
+            <element signature="e#1735#1736#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/type/AnnotationMetadata.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/type/classreading/SimpleMetadataReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1178#1179#0" expanded="true" />
+            <element signature="e#1214#1215#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/annotation/AnnotatedBeanDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/context/annotation/AnnotationBeanNameGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="90" column="34" lean-forward="true" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/support/BeanNameGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/context/annotation/ScannedGenericBeanDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/config/RuntimeBeanReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-          <folding>
-            <element signature="e#207#208#0" expanded="true" />
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#282#283#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/beans/factory/impl/BDValueResolverTest.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/beans/factory/impl/ClassPathBeanDefinitionScannerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/context/ApplicationContext.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/beans/factory/impl/XmlBeanDefinitionReaderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/config/ConfigurableBeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/PropertyValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding>
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/beans/FeatureDescriptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="66" column="18" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
-          <folding>
-            <element signature="e#1320#1321#0" expanded="true" />
-            <element signature="e#1347#1348#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-beans/4.3.8.RELEASE/spring-beans-4.3.8.RELEASE.jar!/org/springframework/beans/factory/xml/XmlBeanFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-beans/4.3.8.RELEASE/spring-beans-4.3.8.RELEASE.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="66" column="52" lean-forward="true" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-beans/4.3.8.RELEASE/spring-beans-4.3.8.RELEASE.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <caret line="799" column="29" lean-forward="true" selection-start-line="799" selection-start-column="29" selection-end-line="799" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-beans/4.3.8.RELEASE/spring-beans-4.3.8.RELEASE.jar!/org/springframework/beans/factory/BeanFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/beans/factory/impl/BeanDefTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#testGetBD#0;class#BeanDefTest#0" />
-            <element signature="method#getPropertyValue#0;class#BeanDefTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/beans/Introspector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/reflect/Executable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/reflect/Method.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="73" column="21" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/support/GenericBeanDefinition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/support/XmlBeanDefinitionReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#parserPropertyElement#0;class#XmlBeanDefinitionReader#0" />
-            <element signature="method#parserPropertyValue#0;class#XmlBeanDefinitionReader#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/support/BeanDefinitionRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/support/BeanDefinitionValueResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/support/FileSystemXmlApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/support/ClassPathXmlApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/support/AbstractApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="73" column="48" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/beans/PropertyEditorSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="104" column="18" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="18" />
-          <folding>
-            <element signature="e#2283#2284#0" expanded="true" />
-            <element signature="e#2311#2312#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/beans/factory/impl/NumberEditorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+        <state relative-caret-position="303">
+          <caret line="32" column="55" lean-forward="true" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -900,142 +821,188 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/src/TestService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="139">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/beansAuto.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/support/XmlBeanDefinitionReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="78" column="17" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
           <folding>
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/src/TestDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/context/annotation/ClassPathBeanDefinitionScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="43" column="82" lean-forward="true" selection-start-line="43" selection-start-column="82" selection-end-line="43" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/config/DependencyDescriptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-          <folding>
-            <element signature="e#157#158#0" expanded="true" />
-            <element signature="e#183#184#0" expanded="true" />
-            <element signature="e#221#222#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/propertyeditors/CustomNumberEditor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="37" />
+          <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/propertyeditors/CustomBooleanEditor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/support/BeanDefinitionRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+        <state relative-caret-position="210">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/ClassNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/support/GenericBeanDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="82" column="35" lean-forward="true" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#787#788#0" expanded="true" />
+            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#989#990#0" expanded="true" />
+            <element signature="e#1017#1018#0" expanded="true" />
+            <element signature="method#setScope#0;class#GenericBeanDefinition#0" />
+            <element signature="e#1901#1902#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/beans/factory/impl/BooleanEditor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/TypeConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-core/4.3.8.RELEASE/spring-core-4.3.8.RELEASE.jar!/org/springframework/util/ClassUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="542" column="35" lean-forward="true" selection-start-line="542" selection-start-column="35" selection-end-line="542" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/beans/BeanDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="23" />
+        <state relative-caret-position="378">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/exception/TypeMismatchException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/InjectionMetadata.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding>
-            <element signature="e#517#518#0" expanded="true" />
-            <element signature="e#558#559#0" expanded="true" />
-            <element signature="e#593#594#0" expanded="true" />
-          </folding>
+        <state>
+          <caret selection-end-line="7" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/beans/factory/impl/TypeConverterTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/beans/factory/impl/DependencyDescriptorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        <state relative-caret-position="324">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/support/DefaultSingletonBeanRegistry.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/config/AutowireCapableBeanFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        <state relative-caret-position="231">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/support/SimpleTypeConverter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/annotation/AutowiredFieldElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        <state relative-caret-position="207">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/support/DefaultBeanFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/annotation/InjectionElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="68" column="68" selection-start-line="68" selection-start-column="68" selection-end-line="68" selection-end-column="68" />
+        <state relative-caret-position="294">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#getBeanClassLoader#0;class#DefaultBeanFactory#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/annotation/InjectionMetadata.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/TestDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/TestService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/beans/factory/impl/InjectionMetadataTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#725#743#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/beans/factory/impl/InjectionMetadata.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/reflect/AccessibleObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/beans/factory/impl/AutowiredAnnotationProcessorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#214#576#0" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1047,12 +1014,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/beans/factory/impl/ApplicationContextTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/config/BeanPostProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="29" column="56" lean-forward="true" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
+        <state relative-caret-position="63">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/annotation/AutowiredAnnotationProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2226">
+          <caret line="110" column="34" lean-forward="true" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/config/ConfigurableBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/config/InstantiationAwareBeanPostProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/context/ApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/support/ClassPathXmlApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#301#302#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/beans/factory/impl/ApplicationContextTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/support/AbstractApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#1185#1186#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/beans/factory/support/DefaultBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-620">
+          <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getBeanClassLoader#0;class#DefaultBeanFactory#0" />
           </folding>
         </state>
       </provider>
@@ -1074,7 +1116,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring</last-edited>
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

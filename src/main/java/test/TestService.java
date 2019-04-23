@@ -1,11 +1,16 @@
-package src;
+package test;
+
+import core.annotation.Autowired;
+import core.annotation.Component;
 
 /**
  * @Author: Marcus
  * @Date: 2019/4/19 9:55
  * @Version 1.0
  */
+@Component("testService")
 public class TestService {
+    @Autowired
     private TestDao testDao;
     private int version;
 

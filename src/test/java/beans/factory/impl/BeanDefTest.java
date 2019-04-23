@@ -1,6 +1,9 @@
 package beans.factory.impl;
 
+import beans.ConstructorArgument;
 import beans.PropertyValue;
+import beans.factory.config.RuntimeBeanReference;
+import beans.factory.config.TypedStringValue;
 import core.io.ClassPathResource;
 import beans.BeanDefinition;
 import org.junit.jupiter.api.BeforeEach;
@@ -8,6 +11,7 @@ import org.junit.jupiter.api.Test;
 import beans.factory.support.DefaultBeanFactory;
 import beans.factory.support.XmlBeanDefinitionReader;
 
+import java.beans.BeanInfo;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -36,6 +40,21 @@ public class BeanDefTest {
         PropertyValue pv = this.getPropertyValue("testDao", pvs);
 
         assertNotNull(pv);
+    }
+
+    @Test
+    void getConstructorArgument(){
+        reader.loadBeanDefinitions(new ClassPathResource("beans.xml"));
+        BeanDefinition bd=factory.getBeanDefinition("testServiceC");
+
+        ConstructorArgument args=bd.getConstructorArgument();
+        List<ConstructorArgument.ValueHolder> valueHolders=args.getArgumentValues();
+
+        RuntimeBeanReference ref1=(RuntimeBeanReference)valueHolders.get(0).getValue();
+        assertEquals("testDao",ref1.getBeanName());
+
+        TypedStringValue stringValue=(TypedStringValue)valueHolders.get(1).getValue();
+        assertEquals("2",stringValue.getValue());
     }
 
     private PropertyValue getPropertyValue(String name, List<PropertyValue> pvs) {
